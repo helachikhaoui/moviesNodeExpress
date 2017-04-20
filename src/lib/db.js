@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var mongoUrl = process.env.PROD_MONGODB||process.env.MONGOLAB_URI ;
+var mongoUrl = process.env.PROD_MONGODB;
 
 module.exports = function(app) {
   mongoose.connect(mongoUrl, {
