@@ -1,8 +1,6 @@
 var app = require('./src/lib/app')
  app.set('port', (process.env.PORT || 3000));
- app.get('/', function(request, response) {
-response.send('Hello World!');
-});
+
 var MongoClient = require('mongodb').MongoClient
     , format = require('util').format;
 MongoClient.connect(process.env.PROD_MONGODB, function (err, db) {
