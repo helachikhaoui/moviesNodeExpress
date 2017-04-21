@@ -3,7 +3,7 @@ app.listen(process.env.PORT||3000)
 // app.set('port', (process.env.PORT || 5000));
 var MongoClient = require('mongodb').MongoClient
     , format = require('util').format;
-MongoClient.connect(process.env.PROD_MONGODB, function (err, db) {
+MongoClient.connect(process.env.PROD_MONGODB+'?authMode=scram-sha1', function (err, db) {
     if (err) {
         throw err;
     } else {
