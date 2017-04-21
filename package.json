@@ -13,11 +13,9 @@
   "author": "AxiomZen",
   "homepage": "https://github.com/axiomzen/blueprints-ch2",
   "dependencies": {
+    "body-parser": "^1.5.2",
     "express": "^4.7.2",
-    "mongoose": "^3.8.14",
-    "body-parser": "^1.5.2"
-
-  
+    "mongoose": "4.1.9"
   },
   "devDependencies": {
     "mocha": "^1.21.3",
