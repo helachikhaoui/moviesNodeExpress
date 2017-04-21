@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var mongoUrl = 'mongodb://hela:hela@ds1791.mlab.com:11791/movies' || 'mongodb://localhost/movies';
+var mongoUrl = 'process.env.PROD_MONGODB' || 'mongodb://localhost/movies';
 
 module.exports = function(app) {
   mongoose.connect(mongoUrl, {
