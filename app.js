@@ -1,5 +1,6 @@
 var app = require('./src/lib/app')
-app.listen(process.env.PORT||3000)
+var port = process.env.PORT || 8000
+app.listen(port||3000)
 // app.set('port', (process.env.PORT || 5000));
 var MongoClient = require('mongodb').MongoClient
     , format = require('util').format;
