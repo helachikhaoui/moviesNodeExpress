@@ -1,5 +1,5 @@
 var express = require('express');
-var app     = express();
+var app = express();
 
 require('./db')(app);
 require('./parser')(app);

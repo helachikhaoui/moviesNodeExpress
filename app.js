@@ -1,4 +1,4 @@
-//var app = require('./src/lib/app')
+var app = require('./src/lib/app')
 app.listen(process.env.PORT||3000)
 // app.set('port', (process.env.PORT || 5000));
 var MongoClient = require('mongodb').MongoClient
