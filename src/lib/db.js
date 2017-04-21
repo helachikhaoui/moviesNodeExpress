@@ -1,5 +1,4 @@
-var mongoose = require('mongoose');
-var mongoUrl = 'mongodb://127.0.0.1:27017/movies';
+/*var mongoUrl = 'mongodb://127.0.0.1:27017/movies';
 
 module.exports = function(app) {
   mongoose.connect(mongoUrl, {
@@ -15,4 +14,4 @@ module.exports = function(app) {
   // mongoose.set('debug', true);
 
   return mongoose;
-};
+};*/
