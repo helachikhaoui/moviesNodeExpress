@@ -45,6 +45,7 @@ describe('Actors', function() {
 
     it('should allow to create an actor without ID', function(done) {
       var actor = {
+	'id': '2',
         'name': 'AxiomZen3',
         'birth_year': 2013,
       };

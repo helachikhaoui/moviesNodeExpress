@@ -1,10 +1,10 @@
 var mongoose    = require('mongoose');
-var generateId  = require('./plugins/generateId');
+//var generateId  = require('./plugins/generateId');
 
 var movieSchema = new mongoose.Schema({
   id: {
     type: Number,
-    required: true,
+    required: false,
     index: {
       unique: true
     }
@@ -23,6 +23,6 @@ var movieSchema = new mongoose.Schema({
   }]
 });
 
-movieSchema.plugin(generateId());
+//movieSchema.plugin(generateId());
 
 module.exports = mongoose.model('Movie', movieSchema);

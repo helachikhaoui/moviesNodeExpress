@@ -21,7 +21,7 @@ describe('Movies', function() {
       var movie = {
         'id': '1',
         'title': 'Hello World',
-        'year': 2013,
+        'year': 2012,
       };
 
       request(app)
@@ -34,7 +34,7 @@ describe('Movies', function() {
       var movie = {
         'id': '1',
         'title': 'Hello World',
-        'year': 2013,
+        'year': 2012,
       };
 
       request(app)
@@ -45,8 +45,9 @@ describe('Movies', function() {
 
     it('should allow to create a movie without ID', function(done) {
       var movie = {
+        'id': '2',
         'title': 'Hello World2',
-        'year': 2013,
+        'year': 2012,
       };
 
       request(app)
